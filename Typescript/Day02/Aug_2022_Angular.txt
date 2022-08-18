@@ -1,0 +1,11 @@
+Last Lecture
+1 Introduction
+2 Environmental Setup
+	- node js
+	- Vscode
+	- Typescript
+
+Today Lecture
+1 Difference between Angular js Vs Angular 2+
+2 What is angular?
+3 Why Angular?
