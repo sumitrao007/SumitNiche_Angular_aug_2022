@@ -1,0 +1,33 @@
+Last Lecture
+1 Difference between Angular js Vs Angular 2+
+	- MVC vs MVW arch
+	- js based/ typescript based/
+	- memory is not efficient / memory efficient
+	- not support mobile community/ it support to all
+	- oops concept is not support / it is support 
+	
+	
+2 What is angular?
+	It is framework
+3 Why Angular?
+	- e2e support ,template , module, service,DI
+	- universal framework
+	- build in cli
+	- code splitting
+	- SPA 
+	- one framework to all 
+4 Typescript => ecma script standard + ecma version + additional features 
+	tsc=> it transcompile .ts to .js 
+
+Today Lecture
+1 Overview of vscode
+2 simple pgm of typescript
+3 variable
+4 data types
+5 Type assertion
+6 operators
+7 control statement
+
+
+
+
