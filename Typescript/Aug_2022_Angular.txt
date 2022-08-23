@@ -1,0 +1,61 @@
+Last Lecture
+1 Overview of vscode
+	- how to create a new file
+	- auto save 
+	- powershell to cmd 
+2 simple pgm of typescript
+	demo1.ts
+		console.log("Hello World...");
+	tsc demo1.ts & node demo1.js
+3 variable
+	var a1;
+4 data types
+	- number -(int,double,long,float,short)
+	- string -(''/"")
+	- boolean -(true/false)
+	- any  -> (number,string,boolean)
+	- void -> neutral => it does not point anything
+	- mise. undefine & null => 
+5 Type assertion
+	var a:any;
+	var temp=(<string> a);
+	
+	var temp1=(a as string)
+6 operators
+	- Airth 
+	- logical =>&&,||,
+	- bitwise =>&, | ~,!,^
+	- relational => <,> <=, >= !=
+	- unary => post/pre inc/dec 
+	-ternary => condition?expression1:expression2
+7 control statement
+	if,if-else,switch,break,continue
+	if(2<4){
+		
+	}else{
+		...
+	}
+	
+	switch(choice){
+		case 1:...
+				break;
+		case 2 :...
+		default: ......
+				break;
+	}
+
+Today Lecture
+1 Loop Statement
+	1 while
+	2 do-while
+	3 for loop 
+	4 for-each => pending
+	
+2 var vs let vs const
+3 Functions
+
+
+
+
+
+
