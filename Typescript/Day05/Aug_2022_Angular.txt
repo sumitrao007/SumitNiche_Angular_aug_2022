@@ -1,0 +1,53 @@
+Last Lecture
+1 Loop Statement
+	1 while
+		var count=5;
+		while(count!=0){
+			console.log("Count "+count);
+			count--;
+			
+		}
+	2 do-while
+		do{
+		console.log("Count "+count);
+			count--;
+		}while(count!=0)
+	3 for loop 
+		for(let i=0;i<5;i++){
+		.....
+		}
+		//console.log(i);
+		var scope=> global
+		let => scope within nearest block
+		const => const pi=3.14;
+		scope => global as well as local 
+	4 for-each => pending=> we will discuss in array 
+	
+2 var vs let vs const
+
+3 Functions
+	function add1(a:number,b:number){
+	.....
+	}
+	add1(4,5);
+	
+	function add2(a:number,b:number):number{
+		return (a+b)
+	}
+
+	let temp=add2(5,7);
+	....
+	
+Today Lecture
+1 Anonymous function
+2 Fat arrow function
+3 optional parameter Functions
+4 default parameter Functions
+5 Array Basics
+6 Join method
+
+
+
+
+
+
