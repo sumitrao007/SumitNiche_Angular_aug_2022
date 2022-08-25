@@ -1,0 +1,46 @@
+Last Lecture
+1 Anonymous function
+	let temp1=function (a:number,b:number):number{
+		return (a+b)
+	}
+	let res=temp1(2,3)
+	
+2 Fat arrow function
+	let temp2=(a:number,b:number):number=>{
+	....
+	return (a+b)
+	}
+	
+	temp2()
+3 optional parameter Functions
+	function add2(a?:number,b?:number){
+	.....
+	}
+	add2(4,5)
+4 default parameter Functions
+	function add2(a:number,b:number=5){
+	......
+	
+	}
+	add2(4,9)
+5 Array Basics
+	let a:number[]=[4,5,6];
+	let a=[3,4,9]
+	let a=[2.5,'string'];
+	let a:any[]=[]
+6 Join method
+	console.log(a.join('#'))
+
+Today Lecture
+1 foreach method
+2 rest parameter function
+3 push & pop method
+4 splice method
+5 slice method
+6 map method
+
+
+
+
+
+
