@@ -1,0 +1,46 @@
+Last Lecture
+1 foreach method
+	let a:number[]=[4,5,6];
+	a.foreach((value,i)=>{
+	.....
+	})
+2 rest parameter function
+	function display(a:string,...item:number[]){
+	....
+	}
+	
+	display(2,5,6)
+3 push & pop method
+	- dynamically add data 
+	let b:number[]=[];
+	b.push(45);
+	b.push(55,78)
+	let res=b.pop();
+4 splice method
+	b.splice(2,0,78);
+	b.splice(3,0,89,90)
+	b.splice(4,1);
+	b.splice(4,2)
+	b.splice(2,1,100,90)
+5 slice method
+	- It copy a section of data from & returns a new array
+	let temp=a.slice(1,6)
+6 map method
+	- it perfoms element by element operation
+	let temp=a.map((value)=>{
+		return (value*value)
+	})
+
+Today Lecture
+node => 14.15
+1 derefence of array
+2 How to return multiple values from function (Interview Question) 
+3 How to swap value without using 3rd variable (Interview Question) 
+3 Simple json Object
+4 array of object
+
+
+
+
+
+
