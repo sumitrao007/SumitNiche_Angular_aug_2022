@@ -1,0 +1,86 @@
+Last Lecture
+1 derefence of array
+	let a:number=[2,3,4];
+	let [t1,t2,t3]=a;
+	console.log(t1)
+	
+	let [s1,...s2]=a;
+2 How to return multiple values from function (Interview Question)
+	function operation(a:number,b:number){
+		return [a+b,a-b,a*b];
+	}
+	
+	let [add,sub,mul]=operation(5,3);
+3 How to swap value without using 3rd variable (Interview Question) 
+		let a=10;
+		let b=20;
+		[b,a]=[a,b];
+		
+3 Simple json Object
+	let jsonobj={
+		fname:"sumit",
+		id:9
+	}
+	
+	1 dot operator
+	2 square operator
+		
+		console.log(jsonobj.fname)
+		
+		console.log(jsonobj["fname"]);
+		
+		
+4 array of object
+
+		let arrobj=[
+			{
+				fname:"sumit",
+				id:9,
+				conuntry:{
+					cid:1,
+					cname:'India'
+				},
+				month:["jan",...],
+				result:[
+				{subj:"m1",
+					marks:45}
+					
+				]
+			},
+			{
+				fname:"sumit",
+				id:9
+			}
+		]
+		
+		for(let i=0;i<arrobj.length;i++){
+			console.log(`
+			
+				fname :: ${arrobj[i].fname}
+				Country name:: ${arrobj[i].conuntry.cname}
+				month: ${arrobj[i].month.join("  ")}
+			`)
+			
+			for(let j=0;j<arrobj[i].result.length;j++)
+			{
+					arrobj[i].result[j].subj
+			}
+			
+		}
+
+
+Today Lecture
+node => 14.15
+additional features of typescript
+1 Class
+2 object,property,method
+3 constructor
+4 access specifier
+5 access in same package
+6 access in different package
+
+
+
+
+
+
