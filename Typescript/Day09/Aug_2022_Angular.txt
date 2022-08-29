@@ -1,0 +1,88 @@
+Last Lecture
+additional features of typescript
+1 Class
+	export class Myclass{
+		public fname:string;
+		private id:number;
+		protected lname:string;
+		constructor(fname:string,id:number,...){
+			this.fname=fname;
+			....
+		}
+		
+		display(){
+			console.log(`
+			  First name :: ${this.fname}
+			`)
+		}
+		
+	}
+	
+	let obj=new Myclass('Sumit','Raokhande',id);
+	obj.display();
+	
+	export function add(a:number,b:number){
+		return (a+b);
+	}
+	
+	export const pi=3.14;
+	
+	demo2.ts
+	
+	import {Myclass,add,pi} from './demo1';
+	
+	let obj=new Myclass('Kiran',...);
+	obj.display();
+	
+	
+		console.log("Addition "+add(2,3))
+		
+		console.log(pi)
+	
+	myfolder
+		demo3.ts
+		
+		import {Myclass} from '../day08/demo1';
+		
+		let obj=new Myclass('Kiran',...);
+		obj.display();
+	
+	
+2 object,property,method
+3 constructor
+4 access specifier
+5 access in same package
+6 access in different package
+
+Today Lecture
+node => 14.15
+1 inheritance => is relationship
+2 method override
+3 interface
+5 has a relationship/association
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
