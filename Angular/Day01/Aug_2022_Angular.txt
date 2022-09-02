@@ -1,0 +1,149 @@
+Last Lecture
+additional features of typescript
+1  inheritance => is relationship
+	export class Shape{
+		Myarea(){
+		...
+		}
+	}
+	
+	circle.ts
+	import {Shape} from './shape';
+	export class Circle extends Shape{
+		area:number;
+		radius:number;
+		
+		constructor(r:number){
+			super();
+			this.radius=r;
+			this.area=0;
+		}
+		
+		override Myarea(){
+			this.area=3.14*this.radius*this.radius;
+		}
+		display(){
+		....
+		}
+	
+	}
+	
+	rectangle.ts
+	import {Shape} from './shape';
+	export class Rectangle extends Shape{
+		constructor(l:number,b:number){
+			super();
+			....
+		}
+		override Myarea(){
+		...
+		}
+	}
+	
+	inheroitanceMain.ts
+	let cirobj=new Circle(2);
+	cirobj.Myarea();
+	cirobj.display();
+	....
+	
+2 method override
+3 interface
+	export interface Employee{
+		fname:string;
+		lname:string;
+		fullname?:string;
+		display();
+	}
+	
+	class EmployeeDetails implements Employee{
+		fnameString;
+		lname:string;
+		salary:number;
+		dept:Department;
+		constructor(f:string,l:string,sal:number,role:string){
+			.....
+			this.dept=new Department(role);
+		}
+		
+		display(){
+		.....
+			this.dept.getRole()
+		}
+	}
+	
+	let emp=new EmployeeDetails('Sumit','Raokhande',100000,'Devops');
+	emp.display();
+5 has a relationship/association
+
+Today Lecture
+node => 14.15
+setup of angular 12 
+1 Angular Arch. overview 
+	- Angular is component Orientated arch
+	- component 
+		1 view file => .html file 
+		2 stylesheet file => .css
+		3 component file => .ts file
+		4 testing file => .spec.ts
+		- gives extra information about that component
+			metadata
+		@Component({
+			.....
+		})
+	- data binding
+		one way data binding=> data flow is from component to view 
+	 1 String interpolation
+	 2 Property Binding
+	 3 Style Binding
+	 4 Class Binding
+	- Event Binding
+		one way data Binding=>  data/request flow form view file to component file 
+		...
+	- Directive => 
+		To change/update/manipulate ur Dom Behaviour
+		attribute,structural, component
+	- app module
+		- declaration 
+			all component should be declare in that section
+		- module 
+			1 by default root module
+		- Services
+			if u want write any BL u can use Services
+			To implement Services We use DI
+		- Routing
+			navigation from one component to another 
+	- Injector.
+	
+		
+2 File Structure
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
