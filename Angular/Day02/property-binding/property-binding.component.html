@@ -1,0 +1,32 @@
+<p>property-binding works!</p>
+
+<!-- if u want to bind data/property dynamically
+  syntax=> [html attribute/directive/custom attribute]="PropertyName"
+-->
+
+<input type="text" [value]="name"
+ placeholder="Enter the Name">
+ <br><br>
+
+ <img [src]="imgUrl" class="myimg" alt="">
+<hr>
+ <table border="1px">
+  <tr>
+    <td colspan="2">First Col</td>
+  </tr>
+  <tr>
+    <td>Second</td>
+    <td>Third</td>
+  </tr>
+ </table>
+ <hr>
+
+ <table border="1px">
+  <tr>
+    <td [attr.colspan]="sizecol">First Col</td>
+  </tr>
+  <tr>
+    <td>Second</td>
+    <td>Third</td>
+  </tr>
+ </table>

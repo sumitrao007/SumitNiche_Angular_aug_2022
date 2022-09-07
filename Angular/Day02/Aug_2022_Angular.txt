@@ -1,0 +1,81 @@
+Last Lecture
+additional features of typescript
+1 Angular Arch. overview 
+	- Angular is component Orientated arch
+	- component 
+		1 view file => .html file 
+		2 stylesheet file => .css
+		3 component file => .ts file
+		4 testing file => .spec.ts
+		- gives extra information about that component
+			metadata
+		@Component({
+			.....
+		})
+	- data binding
+		one way data binding=> data flow is from component to view 
+	 1 String interpolation
+	 2 Property Binding
+	 3 Style Binding
+	 4 Class Binding
+	- Event Binding
+		one way data Binding=>  data/request flow form view file to component file 
+		...
+	- Directive => 
+		To change/update/manipulate ur Dom Behaviour
+		attribute,structural, component
+	- app module
+		- declaration 
+			all component should be declare in that section
+		- module 
+			1 by default root module
+		- Services
+			if u want write any BL u can use Services
+			To implement Services We use DI
+		- Routing
+			navigation from one component to another 
+	- Injector.
+	
+		
+2 File Structure
+	e2e - end to end tooling
+	
+
+
+Today Lecture
+1 Create component manually
+2 Create component using cli/cmd
+3 data binding
+4 string interpolation
+5 Property Binding
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
