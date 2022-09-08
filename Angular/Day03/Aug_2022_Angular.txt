@@ -1,0 +1,80 @@
+Last Lecture
+1 Create component manually
+	1 component .ts
+	2 View file .html
+	3 Stylesheet .css 
+		@Component({
+			selector:'app-employee',
+			templateUrl:'./',
+			StyleUrls:['./']
+		})
+		export class EmployeComponent{
+		
+		}
+		app.module.ts
+		declaration:[
+		EmployeComponent
+		]
+		app.component.html
+		<app-employee></app-employee>
+		
+2 Create component using cli/cmd
+	ng g c student
+		employee.component.html
+		<app-student>
+3 data binding
+	-data flow from component to view file 
+4 string interpolation
+	<h2>{{name}} </h2>
+	{{num1+num1}}
+	
+	<img src=" {{imgUrl}} "
+	
+	stringinterpolation.ts
+	name:string='sumit';
+	num1:number=4;
+	imgUrl:string='../../assets/ng.jepg';
+	
+5 Property Binding
+		<input [value]="name">
+		
+		<td [attr.colspan]="colsize"
+		
+		Property.ts
+		name:string='sumit'
+
+Today Lecture
+1 String Interpolation Vs Property Binding
+2 Style Binding
+3 Class Binding
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
