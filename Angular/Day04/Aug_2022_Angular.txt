@@ -1,0 +1,76 @@
+Last Lecture
+1 String Interpolation Vs Property Binding
+	<div hidden=" {{ishidden}} ">....
+	
+	<div [hidden]="ishidden">...
+	
+	.ts
+	ishidden:boolean=false;
+2 Style Binding
+	<h2 [style.color]="mycolor"> .....
+	[style.color]="rating<4?'red':'green'"
+	
+	[ngStyle]="jsonObj"
+	
+	.ts
+	mycolor:string='red';
+	jsonObj={
+		color:'red',
+		fontFamily:'..',
+		'font-size':'...'
+	}
+3 Class Binding
+	[class]="myclass";
+	
+	
+	[class.danger]="rating<4"
+	[class.warning]="rating>4"
+	
+	[ngClass]="jsonObj"
+	
+	.ts
+	myclass:string='success';
+	isError:boolean=true;
+	jsonObj={
+		'success':!this.isError,
+		'danger':this.isError,
+		'special':this.isSpecial
+	}
+	
+
+Today Lecture
+1 Event Binding
+	- data/request flow from view file to component file
+2 click event
+3 $event
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

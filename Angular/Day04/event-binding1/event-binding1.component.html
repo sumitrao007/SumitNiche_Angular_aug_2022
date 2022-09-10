@@ -1,0 +1,15 @@
+<p>event-binding1 works!</p>
+
+<!-- syntax => (eventName)="eventHandler/customFunction" -->
+
+<button (click)="onClick()">Click</button> <br><br>
+
+<img id="myimg" src="../../assets/bg.jpeg" alt=""  (click)="onImageClick()" >
+
+<!-- $event => 
+    - it is special variable of angular
+    - It gives current dom element information (json object)
+    - u can only access the data of current html element u can not change or manipulate a data 
+-->
+<br><br>
+<button value="Doller Event occur" (click)="onSend($event)" >Send</button>
