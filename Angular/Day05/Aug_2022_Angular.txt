@@ -1,0 +1,76 @@
+Last Lecture
+1 Event Binding
+	- data/request flow from view file to component file
+2 click event
+	<button (click)="onClick()">
+	<img src="..." (click)="onImage()">
+	
+	
+	.ts file 
+	count:boolean=true;
+	onClick(){
+		if(this.count==true){
+			console.log(".....");
+			this.count=false;
+		}
+	
+	}
+	
+	onImage(){
+	....
+	}
+	
+	
+	
+3 $event
+	- it is special variable given by angular
+	- It gives current dom element informatuion
+	- it can access information only but u can not manipulate or change the data/information 
+	
+	<button value="Doller event occur " (click)="onSend($event)">
+	.ts file
+	onSend(myevent:any){
+		console.log(myevent)
+		console.log(myevent.target.value);
+	}
+	
+
+Today Lecture
+1 template ref. variable
+2 real time example
+3 change event
+4 keyboard event
+5 Two way Binding
+	
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
