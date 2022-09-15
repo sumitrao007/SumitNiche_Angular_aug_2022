@@ -1,0 +1,65 @@
+Last Lecture
+1 template ref. variable
+	<input #inputname >
+	<button (click)="onClick(inputname.value)">Click
+2 real time example
+	
+3 change event
+	<input #inputname (change)="onChange(inputname)">
+	
+4 keyboard event
+	
+	<input (keyup)="onKeyUp()">
+	<input (keydown)="onKeydown()">
+		
+5 Two way Binding
+	ngModel=> it is attribute directive
+	[(ngModel)]="name"
+	formsModule
+
+Today Lecture
+1 event binding without using event handler
+	- ur logic is one line logic 
+2 Structural directive
+	- ur dom structure can be manipulate or change its behaviour with the help of structure directive dynamically 
+	1 *ngIf
+	2 *ngFor
+	3 *ngSwitchCase
+3 if directive
+4 for directive
+5 Mouse event => Pending
+	1 mouseover
+	2 mouseout
+ 	
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
