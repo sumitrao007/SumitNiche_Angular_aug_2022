@@ -1,0 +1,50 @@
+Last Lecture
+1 event binding without using event handler
+	- ur logic is one line logic 
+2 Structural directive
+	- ur dom structure can be manipulate or change its behaviour with the help of structure directive dynamically 
+	1 *ngIf
+	2 *ngFor
+	3 *ngSwitchCase
+3 if directive
+4 for directive
+
+Today Lecture
+
+1 Mouse event => Pending
+	1 mouseover
+	2 mouseout
+2 
+ 	
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+<p>fordirective works!</p>
+
+<table border="1px">
+  <thead>
+      <th>Sr no</th>
+      <th>Product name </th>
+      <th>Price</th>
+      <th>Quantity</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of arrprod;index as i"
+      (mouseover)="onMouseOver(item)"
+      [ngClass]="{
+        'highlight':selected===item.productname
+      }"
+      (mouseout)="onMouseout()"
+    >
+      <td> {{i+1}} </td>
+      <td> {{item.productname}} </td>
+      <td> {{item.price}} </td>
+      <td> {{item.quantity}} </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<input #inputdate type="date"><br><br>
+<button (click)="onGet(inputdate.value)">Get</button>
+<br><br>
+<h2>Age :: {{agecal}} </h2>
