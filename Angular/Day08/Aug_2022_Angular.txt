@@ -1,0 +1,86 @@
+Last Lecture
+1 Mouse event => Pending
+
+	1 mouseover
+	2 mouseout
+	<tr (mouseover)="onMouseOver(item)"	
+	[ngClass]="{
+	
+	'highlight': selected===item.productname
+	}
+	"
+	(mouseout)="onMouseout()"
+	
+	.ts file
+	
+	onMouseOver(item:any){
+		this.selected=item.productname;
+	}
+	onMouseout(){
+		this.selected='';
+	}
+	
+2 if directive
+	- ng-template=> component directive
+	div *ngIf="rating<4; else elsepart">
+		<h2> condition is true
+	</div>
+	
+	<ng-template #elsepart>
+		<h2> Condition is false 
+	</ng-template>
+	
+3 simple age example	
+
+	<input type="date" #inputdate>
+	<button (click)="onGet(inputdate.value)">
+	
+	.ts file
+		onGet(mydate:string){
+			let temp=mydate.split("-");
+			let currdate=new Date();
+			
+			this.age=currdate.getFullyear()- (+temp[0])
+			
+		}
+
+Today Lecture
+1 Switch directive
+2 Component interaction
+	- u can send a data(string/number/boolean/array/json/arryof object) from one component to another component 
+	- to establish parent- child relationship
+3 @Input()
+
+ 	
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
