@@ -1,0 +1,25 @@
+<p>parent works!</p>
+
+<h2> {{childStrData}} </h2>
+
+<table border="1px">
+  <thead>
+    <th>Sr No</th>
+    <th>Product name</th>
+    <th>Price</th>
+    <th>Quantity</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of arrObj;index as i">
+        <td>  {{i}} </td>
+        <td>  {{item.name}} </td>
+        <td>  {{item.price}} </td>
+        <td>  {{item.qty}} </td>        
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<app-child2 (childstrData)="childStrData=$event"
+    (childArrData)="arrObj=$event"
+></app-child2>

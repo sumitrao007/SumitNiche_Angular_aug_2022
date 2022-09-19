@@ -1,0 +1,81 @@
+Last Lecture
+1 Switch directive
+	- Structral directive
+		
+		<input #inputcolor> 
+		<button (click)="onSend(inputcolor.value)">
+		
+		
+		div [ngSwitch]="choice">
+			div *ngSwitchCase="'red'"
+				[style.background]="choice"
+			>
+				Your color name is {{choice}}
+			....
+			div *ngSwitchDefault
+				[style.background]="choice==''?'black':'orange'"
+			> your color name is wrong {{choice}}
+		
+		.ts file
+		
+		onSend(colorname:string){
+			this.choice=colorname;
+		}
+		
+		
+2 Component interaction
+	- u can send a data(string/number/boolean/array/json/arryof object) from one component to another component 
+	- to establish parent- child relationship
+	
+	
+3 @Input()
+	parent.html
+	
+	<app-child1 [parentstrdata]="strdata">
+	
+	parent.ts
+	strdata:string='......'
+	
+	child.ts
+		@Input() parentstrdata:string='';
+		
+Today Lecture
+1 @Output()=>
+	if u want to send child to parent data 
+2 @ViewChild
+	1 if u want access parent html element
+	2 if u want access property or method of child component
+
+ 	
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

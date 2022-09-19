@@ -1,0 +1,20 @@
+<p>parent1 works!</p>
+
+<div #htmldiv>
+  <p>  Access Html element using ViewChild </p>
+
+</div>
+
+<hr>
+
+
+<div class="MainDiv">
+  <div class="btndiv">
+    <button (click)="OnChildProperty()">Access Child Property</button>
+     <button (click)="onChildMethodAccess()" >Access Child Method </button>
+  </div>
+  <div class="ChildDiv">
+        <app-child3></app-child3>
+  </div>
+</div>
+

@@ -1,0 +1,28 @@
+
+.mydivclass{
+  background-color: blue;
+  color: white;
+  width: 350px;
+  height: 200px;
+}
+.MainDiv{
+  display: flex;
+  margin: 10px;
+}
+.MainDiv .btndiv{
+  padding: 10px;
+  margin: 10px;
+  line-height: 15px;
+  align-items: center;
+}
+
+.MainDiv .btndiv button{
+  margin: 10px;
+  padding: 8px;
+}
+.MainDiv .ChildDiv{
+  margin: 10px;
+  padding: 8px;
+  text-align: center;
+  align-items: center;
+}
