@@ -1,0 +1,38 @@
+<p>contentprojection works!</p>
+
+<hr>
+
+<!-- <app-child4 [ParentTagData]="inputtag" ></app-child4> -->
+
+
+<!-- <app-child4>
+    <label for="">Email Id::</label> <br><br>
+    <input type="text" placeholder="Enter the Email"> <br><br>
+    <small> Hint Message  </small>
+</app-child4> -->
+
+<!-- <app-child4 [bg]="'blue'" >
+  <label for="">Email Id :: </label> <br><br>
+  <input type="text" placeholder="Enter the Email"> <br><br>
+  <small> Hint Message  </small>
+</app-child4> -->
+
+<!-- <app-child4 [bg]="'cyan'" >
+  <label for="">Email Id :: </label> <br><br>
+  <input type="text" placeholder="Enter the Email" (change)="onchange($event)" > <br><br>
+  <small> {{hintmsg}}  </small>
+</app-child4> <br>
+
+<app-child4 [bg]="'cyan'" >
+  <label for="">Password :: </label> <br><br>
+  <input type="password" placeholder="Enter the Password" (change)="onchange($event)" > <br><br>
+  <small> {{hintmsg}}  </small>
+</app-child4> -->
+
+
+<app-child4 [bg]="'cyan'" *ngFor="let item of [1,2,3]" >
+  <label for="">Email Id :: </label> <br><br>
+  <input type="text" placeholder="Enter the Email" (change)="onchange($event)" > <br><br>
+  <small> {{hintmsg}}  </small>
+  <br><br>
+</app-child4> <br>

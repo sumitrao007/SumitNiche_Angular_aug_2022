@@ -1,0 +1,78 @@
+Last Lecture
+1  @Output()=>
+	if u want to send child to parent data 
+		child.ts
+		@Output() strchildevent=new EventEmitter();
+		
+		onSend() {
+			this.strchildevent.emit(this.strdata);
+		}
+		
+		<app-child2 (strchildevent)="datarecive=$event">
+2 @ViewChild
+	1 if u want access parent html element
+		<div #mydiv>.....
+		
+		parent.ts=> AfterViewInit
+		@ViewChild('mydiv') Mydiv:ElementRef;
+		
+		ngAfterViewInit(){
+			....
+		}
+	2 if u want access property or method of child component
+		
+		child,ts
+		username:string='Default value';
+		
+		onClick(){
+			alert("Welcome "+this.username)
+		}
+		
+		parent.ts
+		
+		@ViewChild(ChildComponent) childcomp:ChildComponent;
+		
+		onChildProperty(){
+			this.childcomp.username="Sumit";
+		}
+		
+		onChildMethodAccess(){
+			this.childcomp.onClick();
+		}
+
+Today Lecture
+1 Sanitization in Angular
+	
+2 Content Projection
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
