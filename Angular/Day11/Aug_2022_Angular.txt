@@ -1,0 +1,79 @@
+Last Lecture
+1  Sanitization in Angular
+	
+	inputtag:string='Email<input >'
+	
+	parent.hmtml
+	
+	<app-Child4 [parenttag]="inputtag">
+	
+	child4.ts
+	
+	@Input() parenttag:string=''
+	
+	child.html
+	
+	div [innerHtml]="parenttag">
+	Email 
+	
+	
+2 Content Projection
+
+parent.html
+	<app-Child4>  
+		<label>....
+		<input type="text" (change)="onChange()">
+		<small>{{hintmsg}}
+			
+	</app-Child4>
+	
+	parent.ts
+	onChange(){
+	.....
+	}
+	
+
+child.html
+	div>
+		
+	<ng-content> </ng-content>
+	</div>
+
+Today Lecture
+1 Pipe
+	- if u want transform ur data to the end user then we use a pipe it do not change ur original data 
+	
+2 Inbuild Pipe
+	
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
