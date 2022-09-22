@@ -1,0 +1,59 @@
+Last Lecture
+1 Pipe
+	- if u want transform ur data to the end user then we use a pipe it do not change ur original data 
+	
+2 Inbuild Pipe
+		{{strdata | lowercase }}
+		uppercase,titlecase,slice
+		
+		{{0.025 | percent:'1.1'}}
+		{{0.25 | currency:'INR':'code'}}
+		
+		{{5.6784569| number:'1.2-3'}}
+		
+		{{mydate | date :'longDate' }}
+		{{mydate | date :'dd-MM-yyyy' }}
+		
+		{{mydate | date :'longDate' | uppercase}}
+		
+		
+
+Today Lecture
+1 Custom Pipe
+2 Pure Pipe => it apply only deterministic value 
+3 Impure Pipe => it apply only non-deterministic value 
+4 PipeTransform => it is interface
+5 transform() 
+	
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
