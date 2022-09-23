@@ -1,0 +1,49 @@
+Last Lecture
+1 Custom Pipe
+2 Pure Pipe => it apply only deterministic value 
+3 Impure Pipe => it apply only non-deterministic value 
+4 PipeTransform => it is interface
+5 transform() 
+	
+Today Lecture
+1 Services
+	- It is simple class
+	- It is used to write ur business logic
+	- it is code maintainbilty
+	- It is used for code reualbility
+	- it is used also to connect ur backend server to ur frontend
+	
+2 DI
+	use deoendancy injection
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
