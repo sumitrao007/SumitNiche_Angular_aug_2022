@@ -1,0 +1,130 @@
+Last Lecture
+1  Services
+	- It is simple class
+	- It is used to write ur business logic
+	- it is code maintainbilty
+	- It is used for code reualbility
+	- it is used also to connect ur backend server to ur frontend
+	
+2 DI
+	use dependancy injection
+	
+	export class courseService{
+		private course:string[]=[.....];
+		
+		getCourse(){
+			return this.course;
+		}
+	}
+	
+	course.ts
+	mycourse:string[]=[];
+	constructor(private service:courseService){
+		//let service=new courseService();
+		//this.mycourse=service.getCourse();
+	}
+	ngoninit(){
+		this.mycourse=this.service.getCourse();
+	}
+	
+	app.module.ts
+	provider:[courseService]
+	
+Today Lecture
+1 Http Protocol
+	- it is set of rule 
+2 Http methods
+	1 get => get the data from backend server 
+	2 post=> send the data to ur backend server
+	3 put => to update data 
+	4 delete => to delete a particular data
+	
+	Http Request-Response
+	http Request it has 2 parts
+		1 http header
+			- auth
+			- corse setting
+			- ip
+			- date
+			- url 
+			- content-type
+				-html
+				-json
+				-pdf
+				-img
+				-audio
+				-video
+				- doc
+		2 http body
+			- data 
+				- json/text/xml
+				
+	Http response 
+	1 http header
+			- auth
+			- corse setting
+			- ip
+			- date
+			- url 
+			- content-type
+				-html
+				-json
+				-pdf
+				-img
+				-audio
+				-video
+				- doc
+			- status code	
+				1 2xx => success,ok
+				2 3xx => Redirection
+				3 4xx => client side error
+				4 5xx => server side 
+		2 http body
+			- data 
+				- json/text/xml
+	
+3 HttpClientModule
+	we have import tat module in app.module.ts file in import section
+	we hv to use service HttpClient
+	
+4 https://jsonplaceholder.typicode.com/posts
+	
+	- it is a fake service
+		- if u send a post/update/delete it will process ur request but changes is not refelect in your database but it gives a response to ur request
+	
+	
+5 Observalable 
+7 @Inectable()
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
