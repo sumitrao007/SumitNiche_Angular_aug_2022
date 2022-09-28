@@ -1,0 +1,15 @@
+tr,td,th{
+  border: 1px solid;
+}
+
+tr td button{
+  margin: 5px;
+  padding: 5px;
+  border: 1px dashed green;
+  border-radius: 8px;
+}
+
+tr td button:hover{
+  background-color: green;
+  padding: 10px;
+}

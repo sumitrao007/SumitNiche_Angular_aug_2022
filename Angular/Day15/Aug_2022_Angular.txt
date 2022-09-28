@@ -1,0 +1,149 @@
+Last Lecture
+1  Http Protocol
+	- it is set of rule 
+2 Http methods
+	1 get => get the data from backend server 
+	2 post=> send the data to ur backend server
+	3 put => to update data 
+	4 delete => to delete a particular data
+	
+	Http Request-Response
+	http Request it has 2 parts
+		1 http header
+			- auth
+			- corse setting
+			- ip
+			- date
+			- url 
+			- content-type
+				-html
+				-json
+				-pdf
+				-img
+				-audio
+				-video
+				- doc
+		2 http body
+			- data 
+				- json/text/xml
+				
+	Http response 
+	1 http header
+			- auth
+			- corse setting
+			- ip
+			- date
+			- url 
+			- content-type
+				-html
+				-json
+				-pdf
+				-img
+				-audio
+				-video
+				- doc
+			- status code	
+				1 2xx => success,ok
+				2 3xx => Redirection
+				3 4xx => client side error
+				4 5xx => server side 
+		2 http body
+			- data 
+				- json/text/xml
+	
+3 HttpClientModule
+	we have import that module in app.module.ts file in import section
+	we hv to use service HttpClient
+	
+4 https://jsonplaceholder.typicode.com/posts
+	
+	- it is a fake service
+		- if u send a post/update/delete it will process ur request but changes is not refelect in your database but it gives a response to ur request
+	
+	
+5 Observalable 
+7 @Inectable()
+
+http.ts
+	
+	@Injectable({
+		ProdedIn:"root"
+	})
+	export class HttpService{
+		
+		
+			constructor(private http:HttpClient){}
+			
+			getPost(){
+				return (this.http.get(this.url));
+			}
+			
+			postdata(obj){
+				return (this.http.post(this.url,obj))
+			}
+		
+	}
+	
+	post.ts
+	
+	constructor(private service:HttpService)
+	
+	getPost(){
+		this.service.getPost()
+		.subcribe((response:any)=>{
+			console.log(response);
+			this.post=response
+		})
+	}
+onSend(mytitle,mybody){
+	let obj={
+		title:mytitle,
+		body:mybody
+	}
+	
+	this.service.postdata(obj)
+	.subcribe((response)=>{
+			....
+	})
+}
+
+Today Lecture
+1 Put request
+2 delete request
+3 handled error 
+
+
+
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
