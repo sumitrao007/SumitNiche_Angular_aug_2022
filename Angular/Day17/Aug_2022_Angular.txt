@@ -1,0 +1,78 @@
+Last Lecture
+1 Routing
+	- navigation from one component to another component
+	setps
+	1 configure route
+		[
+			{
+				path:"",component:HomeComponent
+			},
+			{
+				path:"page2/:id/:username",component:Page2Component
+			},
+			{
+				path:'**',component:NotFound
+			}
+		]
+	2 use <router-outlet>
+	3 establish link/navigate
+	
+	home.html
+	<a [routerLink]="['/Page2',myid]">Page2
+	
+2 routerlink
+3 Send parameter
+
+	page2.ts
+	ActivatatedRoute
+	
+	this.paramMap
+	.subscrobe((param)=>{
+		param.get("id");
+	})
+
+Today Lecture
+1 Send queryparameter
+2 programatically routing	
+3 child Routes
+
+
+
+	
+
+
+
+
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
