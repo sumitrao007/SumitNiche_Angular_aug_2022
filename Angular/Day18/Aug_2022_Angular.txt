@@ -1,0 +1,93 @@
+Last Lecture
+1 Send queryparameter
+	<a routerLink="/queryparam" queryParams="json">
+	
+2 programatically routing	
+	<button (click)="onPage2()"> page2
+	.ts
+	
+	onPage2(){
+		this.router.navigate(['/Page2',this.myid]);
+	}
+	
+	onQueryParam(){
+		this.router.navigate(['/queryparam'],{
+			queryParams:this.json
+		})
+	}
+3 child Routes
+	product
+		laptop
+		mobile
+		tv
+	app-routing.ts
+	{
+		path:"products",childern:[
+			{
+				path:"",component:ProductComp
+			},
+			{
+				path:"laptop",component:laptopcomp
+			}
+		]
+	}
+	home.html
+	<a routerLink="/products">product
+	
+	product.html
+		
+		<a routerLink="laptop">Laptop
+		....
+		
+		laptop.html
+		<a routerLink="/products/">
+	
+
+Today Lecture
+1 Lazy Loading
+	- whenever u required any module that time u can load that module
+	
+2 Create own module & routing file
+
+3 Modify the routing
+
+
+
+	
+
+
+
+
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
