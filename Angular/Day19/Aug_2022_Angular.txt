@@ -1,0 +1,80 @@
+Last Lecture
+1 Lazy Loading
+	- whenever u required any module that time u can load that module
+	
+2 Create own module & routing file
+	ng g m user --routing
+	
+	listuser,adduser,updateuser,deleteuser
+	iser-routing.ts
+	
+	[
+		{
+			path:"",component:listuser
+		},
+		{
+			path:"adduser",component:adduser
+		}
+	]
+	
+	app-routing.ts
+	{
+		path:"user",loadchildern:()=>import('./user/user.module').then(m=>m.userModule)
+	}
+
+3 Modify the routing
+	<app-home>
+	
+	home.html
+	link mentioned
+	
+	<router-outlet>
+	
+
+Today Lecture
+1 Subject
+	-it is a part of rxjs lib
+	- u can send data using services
+	
+2 BehaviorSubject
+
+
+
+	
+
+
+
+
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
