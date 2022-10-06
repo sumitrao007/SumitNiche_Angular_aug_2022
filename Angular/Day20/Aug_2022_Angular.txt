@@ -1,0 +1,86 @@
+Last Lecture
+1 Subject
+	- it is a part of rxjs lib
+	- u can send data using services
+	ng g s notification
+	
+	// notification=new Subject<string>();
+	notification=new BehaviorSubject<string>('welcome');
+	
+	sendMessage(data:string){
+		this.notification.next(data);
+	}
+	
+	query.ts
+	onSend(msg:string){
+		this.notification.sendMessage(msg);
+	}
+	
+	notifications.ts
+	
+	constructor(private service:Notification){}
+	
+	ngoninit(){
+		this.service.notification
+		.subscribe((data)=>{
+			this.msgdata=data;
+		})
+	}
+	
+	
+2 BehaviorSubject
+
+Today Lecture
+1 Overview of Bootstrap
+	- it is css freamwork
+	- template code we can access
+	- to make ur application attractive
+	- ur application make responsive
+	
+2 Basic grid system
+3 Integration of bootstrap
+	- u can integrate bootstrap in 2 ways
+	1 using CDN Link 
+	2 install bootstrap offline
+	
+
+
+
+	
+
+
+
+
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
