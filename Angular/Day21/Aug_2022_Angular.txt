@@ -1,0 +1,87 @@
+Last Lecture
+1 Overview of Bootstrap
+	- it is css freamwork
+	- template code we can access
+	- to make ur application attractive
+	- ur application make responsive
+	
+2 Basic grid system
+		
+		div class="container">
+			div class="row">
+				div class="col col-sm-6 col-md-6">
+					table render
+				div class="col col-sm-6 col-md-6">
+					login form 
+						div class="form-group">
+							input class="form-control"
+	
+3 Integration of bootstrap
+	- u can integrate bootstrap in 2 ways
+	1 using CDN Link
+		head section=> index.tml
+	2 install bootstrap offline
+		- npm install bootstrap@4.6 --save
+		style.css
+		@import '~bootstrap/dist/css/bootstrap.css';
+	
+Today Lecture
+1 Template driven form
+	- it is use for to make a simple form 
+	- login,register,f/b etc 
+	- validation is done on view file 
+2 FormControl => it is class 
+	1 valid - true/flase
+	2 invalid - true
+	3 touched - true 
+	4 pristine - true
+	5 dirty - true 
+	6 errors - object => true or false
+	
+3 pre-requiest TDF form
+	1 to create formcontrol instance for that we have use ngModel directive=> we hv to use ngModel without notation.It holds a instance of formcontrol, if u r use ngModel then u hv use name attribute of html
+	2 create template ref variable & assign ur ngModel to the template ref variable.
+	3 if u want perform validation on particular element then we have use errors property and also use required attribute of html 
+	
+	
+
+
+
+	
+
+
+
+
+
+	
+	
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
